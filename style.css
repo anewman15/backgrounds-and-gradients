@@ -10,13 +10,69 @@
 .global-navigation {
   width: 980px;
   height: 36px;
-  margin: 45px auto;
+  margin: auto;
   background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  float: left;
+  list-style: none;
+  text-align: center;
+  /* vertical-align: middle; */
+  margin: 0;
+  width: 845px;
+  height: 36px;
+  background-color: black;
+  border: 1px solid #000;
+  border-radius: 4px;
+  /* display: flex; */
+  /* align-items: end; */
+}
+
+.nav-items li {
+  width: calc(845px/8);
+  height: 36px;
+  display: inline;
+  margin: 0;
+  padding: 8px 0 0 0;
+  color: #fff;
+  border-right: 1px solid white;
+  float: left;
+  vertical-align: middle;
+  /* text-align: center; */
 }
 
 .global-navigation a {
-  padding: 0 20px;
-  background-color: black;
+  display: inline;
+  /* width: calc(845px/8); */
+  text-decoration: none;
+  vertical-align: middle;
+  /* text-align: left; */
+  color: #fff;
+  height: 36px;
+}
+
+.nav-items li:hover {
+  background-color: rgb(104, 77, 77);
+}
+
+.nav-search {
+  width: 132px;
+  height: 36px;
+  position: relative;
+}
+
+.nav-search i {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+}
+
+.nav-search input {
+  width: 106px;
+  height: 20.5px;
 }
 
 .products {
