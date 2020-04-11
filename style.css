@@ -27,13 +27,13 @@
 .global-navigation {
   width: 100%;
   height: 36px;
-  margin: 40px auto;
+  margin: 90px auto 20px auto;
   background-color: #fff;
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: rgb(124, 104, 104);
-  border: 1px solid #333;
+  background-image: linear-gradient(rgb(51, 51, 51, 0.7) 50%, rgb(51, 51, 51, 0.6) 50%);
+  border: 1px solid rgba(51, 51, 51, 0.3);
   border-radius: 4px;
 }
 
@@ -52,9 +52,10 @@
   display: inline;
   margin: 0;
   padding: 9px 0 0 0;
-  color: #fff;
-  border-right: 1px solid #333;
   vertical-align: middle;
+  color: #fff;
+  border-right: 1px solid rgba(51, 51, 51, 0.3);
+  background-image: radial-gradient(rgb(51, 51, 51, 0.5), rgb(51, 51, 51, 0.2));
 }
 
 .global-navigation a {
@@ -73,7 +74,7 @@
 }
 
 .nav-items li:hover {
-  background-color: rgb(104, 77, 77);
+  background-color: rgba(51, 51, 51, 0.5);
 }
 
 .nav-search {
@@ -85,39 +86,40 @@
 
 .nav-search i {
   position: absolute;
-  left: 18px;
-  top: 5px;
+  left: 22px;
+  top: 6px;
   color: #fff;
   font-size: 12px;
 }
 
 .nav-search input {
   width: 106px;
-  height: 20.5px;
-  border: 1px solid #333;
+  height: 24px;
+  border: 0.5px solid rgba(51, 51, 51, 0.3);
   border-radius: 50px;
   background-color: transparent;
+  box-shadow: 0 1px 1px 1px rgb(51, 51, 51, 0.8) inset;
 }
 
 .verse-text {
   width: 980px;
   height: auto;
-  margin: 80px auto;
+  margin: 40px auto 0 auto;
 }
 
 .verse-text :first-child {
-  width: 100%;
-  height: 134px;
+  display: block;
+  width: 70%;
+  margin: auto;
 }
 
 .verse-text :nth-child(2) {
   width: 100%;
-  height: 86px;
 }
 
 .verse-text :last-child {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .iphone5s {
