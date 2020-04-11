@@ -1,9 +1,9 @@
 .app-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 540px auto 90px;
   grid-row-gap: 2px;
-  grid-template-areas: 
+  grid-template-areas:
     "main main main main"
     "iphone5c iphone5s mac supplier"
     "footer footer footer footer";
@@ -48,8 +48,7 @@
 }
 
 .nav-items li {
-  width: calc(845px/8);
-  display: inline;
+  width: calc(845px / 8);
   margin: 0;
   padding: 9px 0 0 0;
   vertical-align: middle;
@@ -59,8 +58,6 @@
 }
 
 .global-navigation a {
-  display: inline;
-  width: calc(845px/8);
   text-decoration: none;
   vertical-align: middle;
   color: #fff;
@@ -138,6 +135,7 @@
 .supplier {
   grid-area: supplier;
 }
+
 .app-container aside img {
   width: 100%;
 }
