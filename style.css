@@ -1,37 +1,44 @@
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-rows: 540px auto 90px;
+  grid-row-gap: 2px;
+  grid-template-areas: 
+    "main main main main"
+    "iphone5c iphone5s mac supplier"
+    "footer footer footer footer";
+}
+
 .main-section {
-  /* position: relative; */
   width: 100%;
   height: 540px;
   background-image: url(./images/your_verse_hero.jpg);
   background-size: 100% auto;
   background-position: 50% 100%;
   background-repeat: no-repeat;
+  grid-area: main;
 }
 
 .nav-wrapper {
-  /* position: absolute; */
+  width: 980px;
+  margin: auto;
 }
 
 .global-navigation {
-  /* position: absolute; */
-  /* top: 40px; */
-  width: 980px;
+  width: 100%;
   height: 36px;
-  margin: auto;
+  margin: 40px auto;
   background-color: #fff;
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: black;
-  border: 1px solid #000;
+  background-color: rgb(124, 104, 104);
+  border: 1px solid #333;
   border-radius: 4px;
 }
 
 .global-navigation ul {
-  /* float: left; */
-  /* list-style: none; */
   text-align: center;
-  /* vertical-align: middle; */
   margin: 0;
   width: 845px;
   height: 36px;
@@ -42,15 +49,12 @@
 
 .nav-items li {
   width: calc(845px/8);
-  /* height: 36px; */
   display: inline;
   margin: 0;
-  padding: 8px 0 0 0;
+  padding: 9px 0 0 0;
   color: #fff;
-  border-right: 1px solid white;
-  /* float: left; */
+  border-right: 1px solid #333;
   vertical-align: middle;
-  /* text-align: center; */
 }
 
 .global-navigation a {
@@ -58,9 +62,14 @@
   width: calc(845px/8);
   text-decoration: none;
   vertical-align: middle;
-  /* text-align: left; */
   color: #fff;
-  /* height: 36px; */
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.global-navigation a :first-child {
+  font-size: 22px;
 }
 
 .nav-items li:hover {
@@ -69,7 +78,6 @@
 
 .nav-search {
   width: 132px;
-  /* height: 36px; */
   position: relative;
   align-self: center;
   text-align: center;
@@ -77,48 +85,71 @@
 
 .nav-search i {
   position: absolute;
-  left: 16px;
-  top: 3px;
+  left: 18px;
+  top: 5px;
+  color: #fff;
+  font-size: 12px;
 }
 
 .nav-search input {
   width: 106px;
   height: 20.5px;
-  border: 1px solid black;
+  border: 1px solid #333;
   border-radius: 50px;
+  background-color: transparent;
 }
 
 .verse-text {
   width: 980px;
-  margin: 80px auto;
-  border: 1px solid black;
-  text-align: center;
-  color: white;
-}
-
-.verse-text h1 {
-
-}
-
-.products {
-  width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px;
+  margin: 80px auto;
 }
 
-.products img {
+.verse-text :first-child {
+  width: 100%;
+  height: 134px;
+}
+
+.verse-text :nth-child(2) {
+  width: 100%;
+  height: 86px;
+}
+
+.verse-text :last-child {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.iphone5s {
+  grid-area: iphone5s;
+  border-bottom: 1px solid #000;
+}
+
+.iphone5c {
+  grid-area: iphone5c;
+}
+
+.mac {
+  grid-area: mac;
+}
+
+.supplier {
+  grid-area: supplier;
+}
+.app-container aside img {
   width: 100%;
 }
 
 .page-footer {
   width: 980px;
-  margin: 10px auto;
+  margin: 20px auto;
   display: flex;
+  align-items: start;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   font-size: 10px;
   font-weight: 100;
+  color: rgb(110, 110, 110);
+  grid-area: footer;
 }
 
 .footer-left {
@@ -126,7 +157,7 @@
 }
 
 .footer-left p {
-  margin-top: 0;
+  margin: 0 0 15px 0;
 }
 
 .footer-left a {
