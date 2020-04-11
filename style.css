@@ -7,6 +7,18 @@
   background-repeat: no-repeat;
 }
 
+.global-navigation {
+  width: 980px;
+  height: 36px;
+  margin: 45px auto;
+  background-color: #fff;
+}
+
+.global-navigation a {
+  padding: 0 20px;
+  background-color: black;
+}
+
 .products {
   width: 100%;
   height: auto;
