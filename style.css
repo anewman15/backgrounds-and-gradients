@@ -36,6 +36,15 @@
   margin-top: 0;
 }
 
+.footer-left a {
+  text-decoration: none;
+  color: rgb(0, 136, 204);
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
 .footer-right {
   width: 51%;
   margin-left: 15px;
