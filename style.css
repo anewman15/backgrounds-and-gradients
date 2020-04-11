@@ -1,4 +1,5 @@
 .main-section {
+  /* position: relative; */
   width: 100%;
   height: 540px;
   background-image: url(./images/your_verse_hero.jpg);
@@ -7,51 +8,59 @@
   background-repeat: no-repeat;
 }
 
+.nav-wrapper {
+  /* position: absolute; */
+}
+
 .global-navigation {
+  /* position: absolute; */
+  /* top: 40px; */
   width: 980px;
   height: 36px;
   margin: auto;
   background-color: #fff;
   display: flex;
+  justify-content: start;
   align-items: center;
+  background-color: black;
+  border: 1px solid #000;
+  border-radius: 4px;
 }
 
-.nav-items {
-  float: left;
-  list-style: none;
+.global-navigation ul {
+  /* float: left; */
+  /* list-style: none; */
   text-align: center;
   /* vertical-align: middle; */
   margin: 0;
   width: 845px;
   height: 36px;
-  background-color: black;
-  border: 1px solid #000;
-  border-radius: 4px;
-  /* display: flex; */
-  /* align-items: end; */
+  display: flex;
+  justify-content: start;
+  align-items: middle;
 }
 
 .nav-items li {
   width: calc(845px/8);
-  height: 36px;
+  /* height: 36px; */
   display: inline;
   margin: 0;
   padding: 8px 0 0 0;
   color: #fff;
   border-right: 1px solid white;
-  float: left;
+  /* float: left; */
   vertical-align: middle;
   /* text-align: center; */
 }
 
 .global-navigation a {
   display: inline;
-  /* width: calc(845px/8); */
+  width: calc(845px/8);
   text-decoration: none;
   vertical-align: middle;
   /* text-align: left; */
   color: #fff;
-  height: 36px;
+  /* height: 36px; */
 }
 
 .nav-items li:hover {
@@ -60,19 +69,35 @@
 
 .nav-search {
   width: 132px;
-  height: 36px;
+  /* height: 36px; */
   position: relative;
+  align-self: center;
+  text-align: center;
 }
 
 .nav-search i {
   position: absolute;
-  left: 5px;
+  left: 16px;
   top: 3px;
 }
 
 .nav-search input {
   width: 106px;
   height: 20.5px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.verse-text {
+  width: 980px;
+  margin: 80px auto;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+}
+
+.verse-text h1 {
+
 }
 
 .products {
