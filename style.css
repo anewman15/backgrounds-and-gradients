@@ -1,4 +1,5 @@
 .app-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 540px auto 90px;
@@ -12,8 +13,6 @@
 /* Main section */
 
 .main-section {
-  width: 100%;
-  height: 540px;
   background-image: url(./images/your_verse_hero.jpg);
   background-size: 100% auto;
   background-position: 50% 100%;
@@ -189,7 +188,7 @@
 /* Images */
 
 .app-container aside img {
-  width: 100%;
+  width: 344px;
 }
 
 /* Links */
