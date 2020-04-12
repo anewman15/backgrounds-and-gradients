@@ -23,6 +23,9 @@
 .nav-wrapper {
   width: 980px;
   margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .global-navigation {
@@ -102,7 +105,7 @@
 .verse-text {
   width: 980px;
   height: auto;
-  margin: 40px auto 0 auto;
+  margin: 160px auto 0 auto;
 }
 
 .verse-text :first-child {
