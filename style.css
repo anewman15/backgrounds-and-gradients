@@ -1,16 +1,15 @@
 .app-container {
   width: 100%;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 540px auto 90px;
+  grid-template-columns: repeat(4, 340px);
+  grid-template-rows: 540px 200px 90px;
   grid-row-gap: 2px;
   grid-template-areas:
     "main main main main"
-    "iphone5c iphone5s mac supplier"
+    "iphone5s iphone5c mac supplier"
     "footer footer footer footer";
 }
-
-/* Main section */
 
 .main-section {
   background-image: url(./images/your_verse_hero.jpg);
@@ -23,9 +22,6 @@
 .nav-wrapper {
   width: 980px;
   margin: auto;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 .global-navigation {
@@ -105,7 +101,7 @@
 .verse-text {
   width: 980px;
   height: auto;
-  margin: 180px auto 0 auto;
+  margin: 50px auto 0 auto;
   font-family: 'Work Sans', sans-serif;
   letter-spacing: -2px;
   border: 1px solid black;
@@ -147,26 +143,29 @@
   margin-left: 8px;
 }
 
-/* Products Aside */
+aside div {
+  width: 340px;
+}
 
 .iphone5s {
   grid-area: iphone5s;
-  border-bottom: 1px solid #000;
+  background-image: url(./images/promo_iphone5s.jpg);
 }
 
 .iphone5c {
   grid-area: iphone5c;
+  background-image: url(./images/promo_iphone5c.jpg);
 }
 
 .mac {
   grid-area: mac;
+  background-image: url(./images/promo_30_years.jpg);
 }
 
 .supplier {
   grid-area: supplier;
+  background-image: url(./images/promo_supplier_responsibility.jpg);
 }
-
-/* Footer */
 
 .page-footer {
   width: 980px;
@@ -211,14 +210,6 @@
 .footer-right img {
   vertical-align: middle;
 }
-
-/* Images */
-
-.app-container aside img {
-  width: 344px;
-}
-
-/* Links */
 
 .global-navigation a :first-child {
   font-size: 22px;
