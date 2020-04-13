@@ -2,7 +2,7 @@
   width: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 340px);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 540px 200px 90px;
   grid-row-gap: 2px;
   grid-template-areas:
@@ -144,28 +144,40 @@
   margin-left: 8px;
 }
 
-aside div {
-  width: 340px;
+.promo a {
+  display: block;
+}
+
+.promo div {
+  height: 200px;
 }
 
 .iphone5s {
   grid-area: iphone5s;
   background-image: url(./images/promo_iphone5s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .iphone5c {
   grid-area: iphone5c;
   background-image: url(./images/promo_iphone5c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mac {
   grid-area: mac;
   background-image: url(./images/promo_30_years.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .supplier {
   grid-area: supplier;
   background-image: url(./images/promo_supplier_responsibility.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-footer {
