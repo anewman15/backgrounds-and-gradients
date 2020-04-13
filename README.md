@@ -27,7 +27,7 @@ https://rawcdn.githack.com/anewman15/backgrounds-and-gradients/f6de81004348f2853
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](/issues).
 
 ## Show your support
 
