@@ -104,7 +104,6 @@
   margin: 50px auto 0 auto;
   font-family: 'Work Sans', sans-serif;
   letter-spacing: -2px;
-  border: 1px solid black;
 }
 
 .verse-text a {
@@ -122,6 +121,8 @@
 }
 
 .verse-subtitle {
+  width: 880px;
+  margin: auto;
   font-size: 35px;
   font-weight: 300;
   line-height: 1.3;
