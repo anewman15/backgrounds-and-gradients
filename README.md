@@ -2,7 +2,7 @@
 
 This is a client side clone of https://web.archive.org/web/20140301004610/http://www.apple.com/
 
-![screenshot](https://github.com/anewman15/nyt-article-clone/blob/space-cosmos-article/images/app-screenshot.png)
+![screenshot](https://github.com/anewman15/backgrounds-and-gradients/blob/apple-clone/images/app-screenshot.png)
 
 ## Built With
 
