@@ -1,0 +1,233 @@
+.app-container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 540px 200px 90px;
+  grid-row-gap: 2px;
+  grid-template-areas:
+    "main main main main"
+    "iphone5s iphone5c mac supplier"
+    "footer footer footer footer";
+}
+
+.main-section {
+  background-image: url(./images/your_verse_hero.jpg);
+  background-size: 100% auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  grid-area: main;
+}
+
+.nav-wrapper {
+  width: 980px;
+  margin: auto;
+}
+
+.global-navigation {
+  width: 100%;
+  height: 36px;
+  margin: 90px auto 20px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: linear-gradient(rgb(51, 51, 51, 0.7) 50%, rgb(51, 51, 51, 0.6) 50%);
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  border-radius: 4px;
+}
+
+.global-navigation ul {
+  text-align: center;
+  vertical-align: center;
+  margin: 0;
+  width: 845px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+}
+
+.nav-items li {
+  width: calc(845px / 8);
+  margin: 0;
+  vertical-align: middle;
+  color: #fff;
+  border-right: 1px solid rgba(51, 51, 51, 0.3);
+  background-image: radial-gradient(rgb(51, 51, 51, 0.5), rgb(51, 51, 51, 0.2) 95%);
+}
+
+.global-navigation a {
+  width: calc(845px / 8);
+  height: 36px;
+  display: table-cell;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #fff;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.nav-items li:hover {
+  background-color: rgba(51, 51, 51, 0.4);
+  background-image: radial-gradient(rgb(51, 51, 51, 0.8), rgb(51, 51, 51, 0.1) 95%);
+}
+
+.nav-search {
+  width: 132px;
+  position: relative;
+  align-self: center;
+  text-align: center;
+}
+
+.nav-search i {
+  position: absolute;
+  left: 22px;
+  top: 8px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.nav-search input {
+  width: 106px;
+  height: 24px;
+  border: 0.5px solid rgba(51, 51, 51, 0.3);
+  border-radius: 50px;
+  background-color: transparent;
+  box-shadow: 0 1px 1px 1px rgb(51, 51, 51, 0.8) inset;
+}
+
+.verse-text {
+  width: 980px;
+  height: auto;
+  margin: 50px auto 0 auto;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: -2px;
+}
+
+.verse-text a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.verse-title {
+  font-size: 60px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.verse-subtitle {
+  width: 880px;
+  margin: auto;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.verse-call {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.verse-call:hover {
+  text-decoration: underline;
+}
+
+.verse-call i {
+  font-size: 30px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.promo a {
+  display: block;
+}
+
+.promo div {
+  height: 200px;
+}
+
+.iphone5s {
+  grid-area: iphone5s;
+  background-image: url(./images/promo_iphone5s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iphone5c {
+  grid-area: iphone5c;
+  background-image: url(./images/promo_iphone5c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mac {
+  grid-area: mac;
+  background-image: url(./images/promo_30_years.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.supplier {
+  grid-area: supplier;
+  background-image: url(./images/promo_supplier_responsibility.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-footer {
+  width: 980px;
+  margin: 20px auto;
+  display: flex;
+  align-items: start;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  color: rgb(110, 110, 110);
+  grid-area: footer;
+}
+
+.footer-left {
+  width: 49%;
+}
+
+.footer-left p {
+  margin: 0 0 15px 0;
+}
+
+.footer-left a {
+  text-decoration: none;
+  color: rgb(0, 136, 204);
+}
+
+.footer-right {
+  width: 51%;
+  margin-left: 15px;
+}
+
+.footer-right a {
+  margin: 0 2px;
+  text-decoration: none;
+  color: rgb(0, 136, 204);
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-right img {
+  vertical-align: middle;
+}
+
+.global-navigation a :first-child {
+  font-size: 22px;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
